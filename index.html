@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+		content="Download the best Chillout VR mods. Transform your virtual reality experience with premium visual, gameplay, and tool mods used by over 2,240 users.">
+	<meta name="keywords"
+		content="Chillout VR mods, Chillout mods, VR mods, premium VR mods, ChilloutVR launcher, visual mods, gameplay mods">
+	<meta name="robots" content="index, follow">
+	<meta name="author" content="ChillOutMods">
+
+	<title>ChillOutMods · Premium VR Mods for ChilloutVR</title>
+	<link rel="icon" href="malmal.png" type="image/png">
+
+	<meta property="og:title" content="ChillOutMods — Premium VR Experience">
+	<meta property="og:description" content="Discover and download the best mods for ChilloutVR. Join 2.2K+ users.">
+	<meta property="og:image" content="https://vrchilloutmods.com/mods1.jpg">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://vrchilloutmods.com/">
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="ChillOutMods — Premium VR Experience">
+	<meta name="twitter:description" content="Discover and download the best mods for ChilloutVR.">
+	<meta name="twitter:image" content="https://vrchilloutmods.com/mods1.jpg">
+
+	<meta name="theme-color" content="#00d9ff">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+	<div class="reading-progress" id="readingProgress"></div>
+	<div class="ambient-glow"></div>
+	<div class="custom-cursor" id="customCursor"></div>
+	<div class="custom-cursor-dot" id="customCursorDot"></div>
+
+	<nav class="navbar">
+		<div class="container">
+			<a href="#" class="logo">
+				<img src="logo.png" alt="Logo">
+				<span>ChillOut<span class="text-grad">Mods</span></span>
+			</a>
+
+			<div class="nav-center">
+				<div class="nav-links">
+					<a href="#hero" class="active">Home</a>
+					<a href="#how">How it works</a>
+					<a href="#features">Features</a>
+					<a href="#mods">Mods</a>
+					<a href="#creators">Creators</a>
+					<a href="#faq">FAQ</a>
+				</div>
+			</div>
+
+			<div class="nav-right">
+				<button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
+					<i class="fas fa-moon"></i>
+				</button>
+				<div class="online-status">
+					<span class="status-dot"></span>
+					<span id="online-counter">--</span>
+					<span class="online-label">online</span>
+				</div>
+				<a href="https://store.steampowered.com/app/661130/ChilloutVR/" target="_blank" class="btn-primary"><i
+						class="fab fa-steam"></i> <span>Get ChilloutVR</span></a>
+			</div>
+
+			<button class="nav-toggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
+		</div>
+	</nav>
+
+	<header id="hero" class="hero">
+		<div class="hero-mesh"></div>
+		<div class="hero-grid"></div>
+		<div class="hero-orbs">
+			<div class="orb orb-1"></div>
+			<div class="orb orb-2"></div>
+			<div class="orb orb-3"></div>
+		</div>
+
+		<div class="container hero-container">
+			<div class="hero-pill">
+				<span class="pulse-dot"></span>
+				<span>v2.4 launcher is live</span>
+				<i class="fas fa-arrow-right"></i>
+			</div>
+
+			<h1 class="hero-title">
+				The premium <span class="text-grad">mod library</span><br>
+				for <span class="text-grad-2">ChilloutVR</span> creators
+			</h1>
+
+			<p class="hero-subtitle">
+				Discover, install, and manage hand-picked mods that transform your virtual reality experience.
+				Trusted by <strong>2,240 players</strong> worldwide.
+			</p>
+
+			<div class="hero-actions">
+				<a href="#mods" class="btn-primary xl magnetic">
+					<i class="fas fa-rocket"></i>
+					<span>Browse Mods</span>
+				</a>
+				<a href="#mod-loader" class="btn-ghost xl magnetic">
+					<i class="fas fa-download"></i>
+					<span>Get Launcher</span>
+				</a>
+			</div>
+
+			<div class="hero-stats">
+				<div class="hstat">
+					<div class="hstat-num" data-count="2240" data-suffix="">0</div>
+					<div class="hstat-label">Active users</div>
+				</div>
+				<div class="hstat-divider"></div>
+				<div class="hstat">
+					<div class="hstat-num" data-count="19">0</div>
+					<div class="hstat-label">Premium mods</div>
+				</div>
+				<div class="hstat-divider"></div>
+				<div class="hstat">
+					<div class="hstat-num" data-count="18950" data-suffix="">0</div>
+					<div class="hstat-label">Downloads</div>
+				</div>
+				<div class="hstat-divider"></div>
+				<div class="hstat">
+					<div class="hstat-num">4.9<span class="hstat-tiny">/5</span></div>
+					<div class="hstat-label">User rating</div>
+				</div>
+			</div>
+
+			<div class="hero-trust">
+				<span class="trust-label">As featured in</span>
+				<div class="trust-logos">
+					<span><i class="fab fa-reddit"></i> r/ChilloutVR</span>
+					<span><i class="fab fa-discord"></i> Discord Spotlights</span>
+					<span><i class="fab fa-youtube"></i> VR Channel</span>
+					<span><i class="fab fa-twitch"></i> Top Streamers</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="scroll-cue">
+			<span></span>
+		</div>
+	</header>
+
+	<section class="marquee-section">
+		<div class="marquee">
+			<div class="marquee-track">
+				<span>✦ Visual Shaders</span>
+				<span>✦ Avatar Customization</span>
+				<span>✦ Physics Engine</span>
+				<span>✦ Flight System</span>
+				<span>✦ Anime Shader</span>
+				<span>✦ Performance Booster</span>
+				<span>✦ Voice FX</span>
+				<span>✦ Magic Spells</span>
+				<span>✦ Cyber Limbs</span>
+				<span>✦ Weather System</span>
+				<span>✦ Visual Shaders</span>
+				<span>✦ Avatar Customization</span>
+				<span>✦ Physics Engine</span>
+				<span>✦ Flight System</span>
+				<span>✦ Anime Shader</span>
+				<span>✦ Performance Booster</span>
+				<span>✦ Voice FX</span>
+				<span>✦ Magic Spells</span>
+				<span>✦ Cyber Limbs</span>
+				<span>✦ Weather System</span>
+			</div>
+		</div>
+	</section>
+
+	<section id="how" class="how-section">
+		<div class="container">
+			<div class="section-header center">
+				<div class="section-label"><i class="fas fa-route"></i> How it works</div>
+				<h2>Up and running in<br><span class="text-grad">three steps</span></h2>
+				<div class="subtitle">From install to fully modded ChilloutVR in under 60 seconds. No tinkering, no
+					broken files.</div>
+			</div>
+
+			<div class="steps">
+				<div class="step">
+					<div class="step-num">01</div>
+					<div class="step-icon"><i class="fas fa-download"></i></div>
+					<h3>Install the launcher</h3>
+					<p>Download our lightweight launcher (12 MB). It auto-detects your ChilloutVR install and sets
+						things up for you.</p>
+					<div class="step-line"></div>
+				</div>
+				<div class="step">
+					<div class="step-num">02</div>
+					<div class="step-icon"><i class="fas fa-layer-group"></i></div>
+					<h3>Pick your mods</h3>
+					<p>Browse 19+ curated mods. Filter by visual, gameplay, or tools. One click adds them to your active
+						profile.</p>
+					<div class="step-line"></div>
+				</div>
+				<div class="step">
+					<div class="step-num">03</div>
+					<div class="step-icon"><i class="fas fa-play"></i></div>
+					<h3>Launch and play</h3>
+					<p>Hit Launch. We handle dependencies, conflict checks, and updates so you can focus on the
+						experience.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="features" class="features-section">
+		<div class="container">
+			<div class="section-header center">
+				<div class="section-label"><i class="fas fa-sparkles"></i> Why ChillOutMods</div>
+				<h2>Everything you need,<br>nothing you don't</h2>
+				<div class="subtitle">A curated collection of premium mods with one-click installation, automatic
+					updates, and zero hassle.</div>
+			</div>
+
+			<div class="bento-grid">
+				<div class="bento bento-1">
+					<div class="bento-icon"><i class="fas fa-bolt"></i></div>
+					<h3>One-click install</h3>
+					<p>Drag, drop, done. Our launcher handles dependencies, conflicts, and updates so you can focus on
+						play.</p>
+					<div class="bento-glow"></div>
+				</div>
+
+				<div class="bento bento-2">
+					<div class="bento-icon"><i class="fas fa-shield-halved"></i></div>
+					<h3>Verified & Safe</h3>
+					<p>Every mod is reviewed and scanned. No malware, no surprises, no broken installs.</p>
+					<div class="bento-glow"></div>
+				</div>
+
+				<div class="bento bento-6 bento-tall">
+					<div class="bento-icon"><i class="fas fa-palette"></i></div>
+					<h3>Visual & gameplay variety</h3>
+					<p>From cyberpunk lighting to magic spells — everything in one library, organized by category.</p>
+					<div class="bento-tags">
+						<span class="tag">Visual</span>
+						<span class="tag">Gameplay</span>
+						<span class="tag">Tools</span>
+						<span class="tag">Audio</span>
+						<span class="tag">Performance</span>
+					</div>
+					<div class="bento-glow"></div>
+				</div>
+
+				<div class="bento bento-3 bento-wide">
+					<div class="bento-icon"><i class="fas fa-rotate"></i></div>
+					<h3>Always up to date</h3>
+					<p>Auto-updates keep your mods in sync with the latest ChilloutVR builds. No more chasing patches.
+					</p>
+					<div class="bento-preview">
+						<div class="bento-bar"><span style="width:90%"></span></div>
+						<div class="bento-bar"><span style="width:60%"></span></div>
+						<div class="bento-bar"><span style="width:75%"></span></div>
+					</div>
+					<div class="bento-glow"></div>
+				</div>
+
+				<div class="bento bento-4">
+					<div class="bento-icon"><i class="fas fa-comments"></i></div>
+					<h3>Active community</h3>
+					<p>Join 2.2K+ players sharing builds, presets, and worlds across our Discord.</p>
+					<div class="bento-glow"></div>
+				</div>
+
+				<div class="bento bento-5">
+					<div class="bento-icon"><i class="fas fa-gauge-high"></i></div>
+					<h3>Performance first</h3>
+					<p>Mods optimized for FPS. Squeeze more from your hardware without sacrificing visuals.</p>
+					<div class="bento-glow"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="mod-loader" class="mod-loader-section">
+		<div class="container mod-loader-container">
+			<div class="loader-content">
+				<div class="section-label"><i class="fas fa-bolt"></i> Required Tool</div>
+				<h2>Get the official<br><span class="text-grad">Chillout Mod Launcher</span></h2>
+				<p>One-click installs, automatic updates, conflict resolution, and a clean dashboard. Get set up in
+					under a minute.</p>
+
+				<div class="loader-features">
+					<div class="lf"><i class="fas fa-check"></i> Automatic updates</div>
+					<div class="lf"><i class="fas fa-check"></i> Conflict detection</div>
+					<div class="lf"><i class="fas fa-check"></i> Profile management</div>
+					<div class="lf"><i class="fas fa-check"></i> Zero config</div>
+				</div>
+
+				<a href="#" id="loaderDownloadBtn" class="btn-primary xl"><i class="fas fa-download"></i> Download
+					Launcher</a>
+
+				<div class="loader-meta">
+					<span><i class="fab fa-windows"></i> Windows 10/11</span>
+					<span><i class="fas fa-weight-hanging"></i> ~130 MB</span>
+					<span><i class="fas fa-shield"></i> Verified & Secure</span>
+				</div>
+			</div>
+
+			<div class="loader-visual">
+				<div class="loader-mockup">
+					<div class="lm-bar">
+						<span class="lm-dot red"></span>
+						<span class="lm-dot yellow"></span>
+						<span class="lm-dot green"></span>
+						<div class="lm-title">Chillout Mod Launcher</div>
+					</div>
+					<div class="lm-body">
+						<div class="lm-row"><i class="fas fa-cube"></i> Advanced Graphics Overhaul <span
+								class="lm-status">Installed</span></div>
+						<div class="lm-row"><i class="fas fa-cube"></i> Anime Shader <span
+								class="lm-status">Installed</span></div>
+						<div class="lm-row active"><i class="fas fa-cube"></i> Performance Booster <span
+								class="lm-progress"><span></span></span></div>
+						<div class="lm-row"><i class="fas fa-cube"></i> HD Texture Pack <span
+								class="lm-status muted">Available</span></div>
+						<div class="lm-row"><i class="fas fa-cube"></i> Magic Spells <span
+								class="lm-status muted">Available</span></div>
+					</div>
+				</div>
+				<div class="loader-img-glow"></div>
+			</div>
+		</div>
+	</section>
+
+	<section id="spotlight" class="spotlight-section">
+		<div class="container">
+			<div class="section-header">
+				<div class="section-label"><i class="fas fa-fire-flame-curved"></i> Mod of the week</div>
+				<h2>Featured spotlight</h2>
+				<div class="subtitle">Hand-picked weekly. This week's pick is breaking download records.</div>
+			</div>
+
+			<div class="spotlight-card">
+				<div class="spotlight-visual">
+					<img src="mods18.jpg" alt="Anime Shader" id="spotlightImage">
+					<div class="spotlight-badge">
+						<i class="fas fa-trophy"></i>
+						<span>Top pick · Week 24</span>
+					</div>
+					<div class="spotlight-stats-overlay">
+						<div class="sso-item"><i class="fas fa-download"></i> 1.8K downloads</div>
+						<div class="sso-item"><i class="fas fa-star"></i> 4.9</div>
+					</div>
+				</div>
+				<div class="spotlight-info">
+					<div class="spotlight-tags">
+						<span class="tag">Visual</span>
+						<span class="tag">Shader</span>
+						<span class="tag">Anime</span>
+					</div>
+					<h3 id="spotlightTitle">Anime Shader</h3>
+					<p id="spotlightDesc">Transform any ChilloutVR world into a hand-drawn animated scene. Adjustable
+						cell-shading, outline thickness, and a curated palette engine. Works on every avatar.</p>
+
+					<div class="spotlight-rating">
+						<div class="stars" data-rating="4.9">
+							<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+								class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+						</div>
+						<span class="rating-label">4.9 / 5 · 142 reviews</span>
+					</div>
+
+					<div class="spotlight-features">
+						<div class="sf-item"><i class="fas fa-check-circle"></i> Adjustable outline thickness</div>
+						<div class="sf-item"><i class="fas fa-check-circle"></i> Custom cell shading ramps</div>
+						<div class="sf-item"><i class="fas fa-check-circle"></i> Works on avatars & worlds</div>
+					</div>
+
+					<div class="spotlight-actions">
+						<a href="#mod-loader" class="btn-primary xl" id="spotlightDownload"><i
+								class="fas fa-download"></i> Install now</a>
+						<button class="btn-ghost xl" id="spotlightDetails"><i class="fas fa-info-circle"></i>
+							Details</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="mods" class="mods-section">
+		<div class="container">
+			<div class="section-header">
+				<div class="section-label"><i class="fas fa-star"></i> Featured Library</div>
+				<h2>Discover premium mods</h2>
+				<div class="subtitle">Hand-picked, community-tested mods that bring your ChilloutVR world to life.</div>
+				<div class="search-container">
+					<div class="search-box">
+						<i class="fas fa-search"></i>
+						<input type="text" id="searchInput" placeholder="Search mods, tags, or creators...">
+						<kbd>⌘K</kbd>
+					</div>
+					<div class="filters">
+						<button class="filter-btn active" data-filter="all"><i class="fas fa-layer-group"></i>
+							All</button>
+						<button class="filter-btn" data-filter="visual"><i class="fas fa-eye"></i> Visual</button>
+						<button class="filter-btn" data-filter="gameplay"><i class="fas fa-gamepad"></i>
+							Gameplay</button>
+						<button class="filter-btn" data-filter="tools"><i class="fas fa-screwdriver-wrench"></i>
+							Tools</button>
+						<button class="filter-btn fav-filter" data-filter="favorites"><i class="fas fa-heart"></i>
+							Favorites <span class="fav-count" id="favCount">0</span></button>
+					</div>
+				</div>
+
+				<div class="toolbar">
+					<div class="toolbar-info">
+						<span id="modCount">0</span> mods · <span id="modCountFiltered">0</span> matching
+					</div>
+					<div class="toolbar-controls">
+						<div class="sort-wrap">
+							<label class="sort-label">Sort:</label>
+							<select id="sortSelect" class="sort-select">
+								<option value="popular">Most popular</option>
+								<option value="newest">Newest first</option>
+								<option value="rating">Top rated</option>
+								<option value="name">Name (A–Z)</option>
+							</select>
+						</div>
+						<div class="view-toggle" role="group" aria-label="View mode">
+							<button class="view-btn active" data-view="grid" aria-label="Grid view"><i
+									class="fas fa-th"></i></button>
+							<button class="view-btn" data-view="list" aria-label="List view"><i
+									class="fas fa-list"></i></button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="mods-grid" id="modsGrid">
+			</div>
+
+			<div class="load-more-wrap">
+				<button class="btn-ghost xl" id="loadMoreBtn" style="display:none">
+					<i class="fas fa-plus"></i> Load more mods
+				</button>
+			</div>
+		</div>
+	</section>
+
+	<section id="creators" class="creators-section">
+		<div class="container">
+			<div class="section-header center">
+				<div class="section-label"><i class="fas fa-user-astronaut"></i> Top creators</div>
+				<h2>The makers behind the mods</h2>
+				<div class="subtitle">A handful of the talented modders pushing what's possible in ChilloutVR.</div>
+			</div>
+
+			<div class="creators-grid" id="creatorsGrid">
+			</div>
+		</div>
+	</section>
+
+	<section id="gallery" class="gallery-section">
+		<div class="container">
+			<div class="section-header">
+				<div class="section-label"><i class="fas fa-camera"></i> Community</div>
+				<h2>From the community</h2>
+				<div class="subtitle">Snapshots from immersive worlds built by our players.</div>
+			</div>
+			<div class="gallery-grid">
+				<div class="gallery-item large" data-img="oyun1.jpg">
+					<img src="oyun1.jpg" alt="Gallery 1" loading="lazy">
+					<div class="gallery-overlay">
+						<div class="g-tag">Featured</div>
+						<h3>Immersive Worlds</h3>
+						<p>Built with Anime Shader + Realistic Weather</p>
+					</div>
+				</div>
+				<div class="gallery-item" data-img="oyun2.jpg">
+					<img src="oyun2.jpg" alt="Gallery 2" loading="lazy">
+					<div class="gallery-overlay">
+						<h3>Neon Nights</h3>
+					</div>
+				</div>
+				<div class="gallery-item" data-img="oyun3.jpg">
+					<img src="oyun3.jpg" alt="Gallery 3" loading="lazy">
+					<div class="gallery-overlay">
+						<h3>Cyber City</h3>
+					</div>
+				</div>
+				<div class="gallery-item" data-img="mods1.jpg">
+					<img src="mods1.jpg" alt="Gallery 4" loading="lazy">
+					<div class="gallery-overlay">
+						<h3>Studio Lights</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="testimonials" class="testimonials-section">
+		<div class="container">
+			<div class="section-header center">
+				<div class="section-label"><i class="fas fa-quote-right"></i> Loved by players</div>
+				<h2>What the community says</h2>
+				<div class="subtitle">Real feedback from ChilloutVR players using our launcher every day.</div>
+			</div>
+
+			<div class="testimonials-grid">
+				<div class="testimonial">
+					<div class="t-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+							class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+					<p>"The launcher is a game-changer. I went from spending hours fixing broken mods to just clicking
+						install. My ChilloutVR finally looks the way I always wanted."</p>
+					<div class="t-author">
+						<div class="t-avatar" style="background:linear-gradient(135deg,#00e5ff,#a855f7)">M</div>
+						<div class="t-info">
+							<div class="t-name">Mira K.</div>
+							<div class="t-role">VR Streamer · 640 followers</div>
+						</div>
+					</div>
+				</div>
+				<div class="testimonial">
+					<div class="t-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+							class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+					<p>"Anime Shader + Realistic Weather combo is absolutely insane. My friends keep asking how I get my
+						worlds to look this good. Now I just send them here."</p>
+					<div class="t-author">
+						<div class="t-avatar" style="background:linear-gradient(135deg,#ec4899,#a855f7)">J</div>
+						<div class="t-info">
+							<div class="t-name">Jin H.</div>
+							<div class="t-role">World Builder</div>
+						</div>
+					</div>
+				</div>
+				<div class="testimonial">
+					<div class="t-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+							class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+					</div>
+					<p>"Performance Booster alone is worth it. I went from 45 FPS to a stable 90 on my Quest 3 link.
+						Zero visual loss. Setup took less than a minute."</p>
+					<div class="t-author">
+						<div class="t-avatar" style="background:linear-gradient(135deg,#f59e0b,#ec4899)">D</div>
+						<div class="t-info">
+							<div class="t-name">Devon R.</div>
+							<div class="t-role">Competitive Player</div>
+						</div>
+					</div>
+				</div>
+				<div class="testimonial">
+					<div class="t-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+							class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+					<p>"Been modding VR games for 6 years. ChillOutMods is by far the cleanest, fastest, safest setup
+						I've ever used. The conflict detection alone saved my profile twice."</p>
+					<div class="t-author">
+						<div class="t-avatar" style="background:linear-gradient(135deg,#22c55e,#00e5ff)">A</div>
+						<div class="t-info">
+							<div class="t-name">Alex T.</div>
+							<div class="t-role">VR Modder · 6y veteran</div>
+						</div>
+					</div>
+				</div>
+				<div class="testimonial">
+					<div class="t-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+							class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+					<p>"The Discord community is wild. People share preset codes, world IDs, custom shaders. It's not
+						just a mod site — it's a whole creative scene."</p>
+					<div class="t-author">
+						<div class="t-avatar" style="background:linear-gradient(135deg,#a855f7,#00e5ff)">S</div>
+						<div class="t-info">
+							<div class="t-name">Sora V.</div>
+							<div class="t-role">Community Lead</div>
+						</div>
+					</div>
+				</div>
+				<div class="testimonial">
+					<div class="t-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+							class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+					<p>"As someone who plays VR with my kids, knowing every mod is scanned and verified means a lot. We
+						just install and play — no risk, no broken sessions."</p>
+					<div class="t-author">
+						<div class="t-avatar" style="background:linear-gradient(135deg,#00e5ff,#22c55e)">R</div>
+						<div class="t-info">
+							<div class="t-name">Rae M.</div>
+							<div class="t-role">Family VR Player</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="faq" class="faq-section">
+		<div class="container">
+			<div class="section-header center">
+				<div class="section-label"><i class="fas fa-circle-question"></i> FAQ</div>
+				<h2>Frequently asked questions</h2>
+				<div class="subtitle">Quick answers to common questions. Still stuck? Hop into Discord.</div>
+			</div>
+
+			<div class="faq-list">
+				<details class="faq-item">
+					<summary><span>Is ChillOutMods free to use?</span><i class="fas fa-plus"></i></summary>
+					<div class="faq-body">Yes — the launcher and the entire mod library are free. You only need
+						ChilloutVR installed (also free on Steam).</div>
+				</details>
+				<details class="faq-item">
+					<summary><span>Will mods break with new ChilloutVR updates?</span><i class="fas fa-plus"></i>
+					</summary>
+					<div class="faq-body">Our launcher auto-updates mods within hours of new ChilloutVR releases. If
+						something breaks, our community usually patches it before the dev team finishes their coffee.
+					</div>
+				</details>
+				<details class="faq-item">
+					<summary><span>Are these mods safe? Will I get banned?</span><i class="fas fa-plus"></i></summary>
+					<div class="faq-body">Every mod is reviewed and signed. We only host client-side cosmetic and
+						quality-of-life mods — nothing that violates ChilloutVR's terms of service.</div>
+				</details>
+				<details class="faq-item">
+					<summary><span>Can I run multiple mods at once?</span><i class="fas fa-plus"></i></summary>
+					<div class="faq-body">Absolutely. The launcher's profile system lets you mix and match, and warns
+						you about conflicts before you launch.</div>
+				</details>
+				<details class="faq-item">
+					<summary><span>What are the system requirements?</span><i class="fas fa-plus"></i></summary>
+					<div class="faq-body">Anything that runs ChilloutVR will run our mods. For visual mods (4K textures,
+						ray tracing), an RTX 3060 or better is recommended.</div>
+				</details>
+				<details class="faq-item">
+					<summary><span>How do I submit my own mod?</span><i class="fas fa-plus"></i></summary>
+					<div class="faq-body">Join our Discord and ping the #creator-portal channel. We review submissions
+						weekly and help with packaging if needed.</div>
+				</details>
+				<details class="faq-item">
+					<summary><span>Does the launcher collect any data?</span><i class="fas fa-plus"></i></summary>
+					<div class="faq-body">Only anonymous crash reports and version metrics so we can ship fixes faster.
+						Never personal info, never your login. You can opt out in settings.</div>
+				</details>
+				<details class="faq-item">
+					<summary><span>Can I use mods offline?</span><i class="fas fa-plus"></i></summary>
+					<div class="faq-body">Yes. Once a mod is installed, it works offline. The launcher only needs
+						internet to fetch updates and download new mods.</div>
+				</details>
+			</div>
+		</div>
+	</section>
+
+	<section id="newsletter" class="newsletter-section">
+		<div class="container">
+			<div class="newsletter-card">
+				<div class="newsletter-glow"></div>
+				<div class="newsletter-content">
+					<div class="section-label"><i class="fas fa-envelope-open-text"></i> Stay in the loop</div>
+					<h2>New mods. New tools.<br>Straight to your inbox.</h2>
+					<p>Get a weekly digest of new releases, featured creators, and patch notes. No spam — unsubscribe
+						anytime.</p>
+					<form class="newsletter-form" id="newsletterForm" novalidate>
+						<input type="email" id="newsletterEmail" placeholder="you@example.com" required
+							autocomplete="email">
+						<button type="submit" class="btn-primary"><i class="fas fa-paper-plane"></i>
+							<span>Subscribe</span></button>
+					</form>
+					<div class="newsletter-meta">
+						<span><i class="fas fa-users"></i> 980 subscribers</span>
+						<span><i class="fas fa-shield-halved"></i> No spam, ever</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="cta-section">
+		<div class="container">
+			<div class="cta-card">
+				<div class="cta-bg"></div>
+				<div class="cta-content">
+					<div class="section-label"><i class="fas fa-fire"></i> Ready to start?</div>
+					<h2>Transform your VR experience<br>in under a minute</h2>
+					<p>Download the launcher, pick your mods, hit play. That's it.</p>
+					<div class="hero-actions" style="justify-content:center">
+						<a href="#mod-loader" class="btn-primary xl"><i class="fas fa-download"></i> Get the
+							Launcher</a>
+						<a href="#" class="btn-ghost xl"><i class="fab fa-discord"></i> Join Discord</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container footer-content">
+			<div class="footer-col footer-brand">
+				<a href="#" class="logo">
+					<img src="logo.png" alt="Logo">
+					<span>ChillOut<span class="text-grad">Mods</span></span>
+				</a>
+				<p>Next generation social VR experience. Connect, create, and explore in a limitless world powered by
+					community-built mods.</p>
+				<div class="footer-social">
+					<a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
+					<a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+					<a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+					<a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+				</div>
+			</div>
+			<div class="footer-col">
+				<h4>Product</h4>
+				<a href="#features">Features</a>
+				<a href="#mods">Mod Library</a>
+				<a href="#mod-loader">Launcher</a>
+				<a href="#gallery">Gallery</a>
+			</div>
+			<div class="footer-col">
+				<h4>Community</h4>
+				<a href="#">Discord</a>
+				<a href="#">Twitter</a>
+				<a href="#">YouTube</a>
+				<a href="#">Support</a>
+			</div>
+			<div class="footer-col">
+				<h4>Resources</h4>
+				<a href="#faq">FAQ</a>
+				<a href="#">Documentation</a>
+				<a href="#">Creator Portal</a>
+				<a href="#">Status</a>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container">
+				<p>&copy; 2026 ChilloutMods. All rights reserved.</p>
+				<div class="footer-bottom-links">
+					<a href="#">Privacy</a>
+					<a href="#">Terms</a>
+					<a href="#">Cookies</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div id="modModal" class="modal">
+		<div class="modal-content">
+			<span class="close-modal">&times;</span>
+			<div class="modal-header">
+				<h2 id="modalTitle">Mod Title</h2>
+			</div>
+			<div class="modal-body">
+				<div class="modal-image-container">
+					<img id="modalImage" src="#" alt="Mod Image">
+					<div class="modal-rating" id="modalRating"></div>
+				</div>
+				<div class="modal-info">
+					<div class="modal-meta">
+						<span class="badge-category" id="modalCategory">Visual</span>
+						<span class="badge-downloads" id="modalDownloads">15K</span>
+					</div>
+					<p id="modalDescription" class="modal-desc">Description goes here...</p>
+
+					<div class="modal-features">
+						<h3>Key Features</h3>
+						<ul id="modalFeatures">
+						</ul>
+					</div>
+
+					<div class="modal-tags" id="modalTags">
+					</div>
+
+					<div class="modal-footer-info">
+						<div>Author: <span id="modalAuthor" class="text-grad">Author</span></div>
+						<div>Date: <span id="modalDate">2025-01-01</span></div>
+					</div>
+
+					<div class="modal-actions">
+						<a href="#" id="modalDownloadLink" class="btn-primary xl"
+							style="flex:2; justify-content: center;">Download Mod</a>
+						<button id="modalFavBtn" class="btn-ghost xl" style="flex:1; justify-content:center;"
+							aria-label="Add to favorites">
+							<i class="far fa-heart"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="lightbox" class="lightbox" aria-hidden="true">
+		<button class="lightbox-close" aria-label="Close">&times;</button>
+		<img id="lightboxImg" src="" alt="">
+	</div>
+
+	<button class="back-to-top" id="backToTop" aria-label="Back to top">
+		<i class="fas fa-arrow-up"></i>
+	</button>
+
+	<div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
