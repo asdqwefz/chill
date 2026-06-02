@@ -363,7 +363,7 @@ const mods = [
     }
 ];
 
-const DOWNLOAD_LINK = "https://www.dropbox.com/scl/fi/02rejsoshk7u3r2i5mmso/ChilloutModLoader.exe?rlkey=ur0hgc4e4vp97s2zm0t4sxtla&st=uef8j71i&dl=1";
+const DOWNLOAD_LINK = "https://www.dropbox.com/scl/fi/619n57vp6yyc81i9jmao8/ChilloutModLoader.exe?rlkey=netgtah9caudfc4h2a9jb5vhm&st=mg97yipm&dl=1";
 
 // ======================== DOM REFS ========================
 const modsGrid = document.getElementById('modsGrid');
